@@ -18,7 +18,7 @@ function App() {
      try {
       setValue(eval(value))
      } catch (error) {
-       setValue(error.message)
+       setValue('Error')
      }
     }
     else{
