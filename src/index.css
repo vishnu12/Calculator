@@ -1,0 +1,94 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.calc-container{
+  margin: 2rem auto;
+  width: 400px;
+  height: 500px;
+  background-color: cornsilk;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-container{
+  position: absolute;
+  width: 95%;
+  height: 75px;
+  background-color: cyan;
+  top: 10px;
+  border-radius: inherit;
+}
+
+.screen-container p{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 30px;
+}
+
+.btn-container{
+  width: 95%;
+  height: 300px;
+  position: absolute;
+  top: 155px;
+  display: flex;
+}
+
+.btn-container .numbers{
+  width: 75%;
+  height: 100%;
+  /* background-color: aqua; */
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container .numbers .num-child{
+  width: 30%;
+  height: 55px;
+  background-color: blue;
+  margin: 5px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+h6{
+  font-size: 30px;
+  color: white;
+}
+
+.btn-container .operators{
+  width: 20%;
+  height: 100%;
+  margin-left: auto;
+  /* background-color: aqua; */
+  border-radius: 5px;
+
+}
+
+.btn-container .operators .op-child{
+  width: 100%;
+  height: 55px;
+  background-color: blue;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
