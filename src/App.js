@@ -8,17 +8,20 @@ function App() {
   const operArray=["+","-","*","/","="]
 
   const [value, setValue] = useState("0")
-
-
+  
 
   const handleClick=(args)=>{
+    
     if(args==="clear"){
        setValue("0")
     }else if(args==="="){
      try {
-      setValue(eval(value))
+      setValue(eval(value)) 
      } catch (error) {
        setValue('Error')
+       setTimeout(()=>{
+         setValue("0")
+       },1000)
      }
     }
     else{
